@@ -6,7 +6,7 @@
   <style>
     body {
       margin: 0;
-      background-color: #001f3f; /* 다크 네이비 */
+      background-color: #001f3f;
       color: #ffffff;
       font-family: 'Segoe UI', sans-serif;
     }
@@ -19,8 +19,13 @@
     }
 
     header h1 {
-      margin: 0;
+      margin: 10px 0 0;
       font-size: 2.5em;
+    }
+
+    header img {
+      width: 100px;
+      height: auto;
     }
 
     nav {
@@ -29,6 +34,7 @@
       justify-content: center;
       padding: 10px 0;
       border-bottom: 1px solid #444;
+      flex-wrap: wrap;
     }
 
     nav a {
@@ -40,6 +46,19 @@
 
     nav a:hover {
       color: #ffdc00;
+    }
+
+    .language-switch {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .language-switch a {
+      color: #7fdbff;
+      margin-left: 10px;
+      text-decoration: none;
+      font-weight: bold;
     }
 
     section {
@@ -71,7 +90,12 @@
   </style>
 </head>
 <body>
+  <div class="language-switch">
+    <a href="index.html">KO</a> | <a href="index_en.html">EN</a>
+  </div>
+
   <header>
+    <img src="image (65).png" alt="Black Mesa Security Badge">
     <h1>블랙 메사 보안부</h1>
     <p>“과학을 수호합니다. 1955년부터.”</p>
   </header>
